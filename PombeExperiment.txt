@@ -1,0 +1,5 @@
+Names	slide number	experiment Cy3	experiment Cy5	date	comments
+gene.a.del.spot	81	wild type	del	2021-09-10	
+gene.a.OE.spot	82	wild type	OE	2021-09-10	
+gene.b.del.spot	93	wild type	del	2021-09-30	
+gene.b.OE.spot	94	wild type	OE	2021-09-30	
