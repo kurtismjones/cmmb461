@@ -1,8 +1,8 @@
 
 #Student Name: ENTER_NAME_HERE
 #CMMB 461 Microarray Assignment
-#Fall 2022
-#Copywrite 2022 Kurtis Marno Jones
+#Fall 2023
+#Copywrite 2023 Kurtis Marno Jones
 
                                                             #START HERE#####
 #In order to run each line of code highlight that line and click run or highlight that line and press control+enter (Windows) or 
