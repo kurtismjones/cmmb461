@@ -131,7 +131,7 @@ normalized.array<-maNormMain(VARIABLE_NAME,                #Normalization with m
          main="TITLE_GOES_HERE")                           #the X and Y labels, removing the legend, and giving our plot a title (using the 
                                                            #main = parameter in "").
     
-                                                           #Give this plot a title.
+                                                           #Give this plot an appropriate and specific title.
     
     abline(h = 2)                                          #Lastly, we will add a horizontal line at +2 and -2 to show our two-fold change 
     abline(h = -2)                                         #cut-off.
@@ -141,7 +141,7 @@ normalized.array<-maNormMain(VARIABLE_NAME,                #Normalization with m
          zvar="maPrintTip",                                #same treatment.
          legend.func = NULL,
          ylim= c(-3.5,3.5),
-         main="TITLE_GOES_HERE")                           #Give this plot a title as well.
+         main="TITLE_GOES_HERE")                           #Give this plot an appropriate and specific title as well.
     abline(h = 2)
     abline(h = -2)
   
