@@ -1,0 +1,5 @@
+Names	slide number	experiment Cy3	experiment Cy5	date	comments
+gene_A_del.spot	81	wild type	del	2024-09-10	Gene A Deletion
+gene_A_OE.spot	82	wild type	OE	2024-09-10	Gene A Overexpression
+gene_B_del.spot	93	wild type	del	2024-09-30	Gene B Deletion
+gene_B_OE.spot	94	wild type	OE	2024-09-30	Gene A Overexpression
