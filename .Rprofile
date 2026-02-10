@@ -1,5 +1,5 @@
-require(cipheR)
-require(SimDesign)
+install.package(cipheR)
+install.package(SimDesign)
 library(cipheR)
 library(SimDesign)
 .update.me<-function() {
@@ -8,3 +8,10 @@ library(SimDesign)
   
 }
 .update.marray<-function() {quiet(.update.me())}
+setHook("rstudio.sessionInit", function(newSession) {
+  if (newSession) {
+    # Replace "path/to/your/script.R" with the correct path to your script
+    rstudioapi::navigateToFile("/cloud/project/CMMB 461 Assignment 1 - R Code F24.R")
+    setwd("/cloud/project/DataFiles")
+  }
+}, action = "append")
