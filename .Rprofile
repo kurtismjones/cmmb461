@@ -8,9 +8,10 @@
 
 setHook("rstudio.sessionInit", function(newSession) {
   if (newSession)
-    rstudioapi::navigateToFile('<CMMB 461 Assignment 1 - R Code F24.R>', line = -1L, column = -1L)
+    file.edit('CMMB 461 Assignment 1 - R Code F24.R')
     setwd("/cloud/project/DataFiles")
 }, action = "append")
+
 
 
 
