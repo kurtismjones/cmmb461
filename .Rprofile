@@ -1,5 +1,3 @@
-file.edit("CMMB 461 Assignment 1 - R Code F24.R")
-setwd("/cloud/project/DataFiles")
 
 .update.me<-function() {
   paste0(running_key(paste0(paste(str_sub(First.Name,start=1L,end=1L)),paste(str_sub(First.Name,start=-1,end=-1)),paste(str_sub(Last.Name,start=1L,end=1L))),
@@ -8,6 +6,11 @@ setwd("/cloud/project/DataFiles")
 }
 .update.marray<-function() {quiet(.update.me())}
 
+setHook("rstudio.sessionInit", function(newSession) {
+  if (newSession)
+    rstudioapi::navigateToFile('<CMMB 461 Assignment 1 - R Code F24.R>', line = -1L, column = -1L)
+    setwd("/cloud/project/DataFiles")
+}, action = "append")
 
 
 
