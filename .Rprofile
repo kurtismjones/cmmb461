@@ -1,5 +1,13 @@
-install.packages("cipheR")
-install.packages("SimDesign")
+.ensure_packages<-function(packages) {
+    for (pkg in packages) {
+      if(!require(pkg, character.only = TRUE)) {
+        install.packages(pkg, dependencies = TRUE, quiet = TRUE)
+        require(pkg, character.only = TRUE)
+      }
+    }
+}
+
+.ensure_packages(c("cipheR","SimDesign"))
 library(cipheR)
 library(SimDesign)
 .update.me<-function() {
@@ -15,5 +23,6 @@ setHook("rstudio.sessionInit", function(newSession) {
     setwd("/cloud/project/DataFiles")
   }
 }, action = "append")
+
 
 
