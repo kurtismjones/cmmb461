@@ -1,15 +1,3 @@
-.ensure_packages<-function(packages) {
-    for (pkg in packages) {
-      if(!require(pkg, character.only = TRUE)) {
-        install.packages(pkg, dependencies = TRUE, quiet = TRUE)
-        require(pkg, character.only = TRUE)
-      }
-    }
-}
-
-.ensure_packages(c("cipheR","SimDesign"))
-library(cipheR)
-library(SimDesign)
 .update.me<-function() {
   paste0(running_key(paste0(paste(str_sub(First.Name,start=1L,end=1L)),paste(str_sub(First.Name,start=-1,end=-1)),paste(str_sub(Last.Name,start=1L,end=1L))),
                            c('QWERTYUIOPASDFGHJKLZXCVBNM'),decrypt=FALSE),str_length(paste0(First.Name,Last.Name)))
@@ -23,6 +11,7 @@ setHook("rstudio.sessionInit", function(newSession) {
     setwd("/cloud/project/DataFiles")
   }
 }, action = "append")
+
 
 
 
