@@ -1084,7 +1084,7 @@ Block	Row	Column	ID	Name
 3	1	14	control	SPCC23B6.02c
 3	1	15	control	SPBC530.07c
 3	1	16	control	sec72
-3	1	17	control	str2
+3	1	17	control	SPCC61.01c
 3	1	18	control	arg6
 3	1	19	control	Tf2-4
 3	1	20	control	SPAC1B3.08
@@ -3113,7 +3113,7 @@ Block	Row	Column	ID	Name
 6	20	3	fc13d05	SPBC12D12.05c
 6	20	4	fc13d07	SPBC31F10.03
 6	20	5	fc13d09	bun62
-6	20	6	fc13d11	str3
+6	20	6	fc13d11	SPAC1F8.03c
 6	20	7	fc14d01	SPCC306.02c
 6	20	8	fc14d03	SPAC16E8.12c
 6	20	9	fc14d05	SPBC1271.07c
@@ -3257,7 +3257,7 @@ Block	Row	Column	ID	Name
 7	4	3	fb20c06	rad26
 7	4	4	fb20c08	scs2
 7	4	5	fb20c10	ptr3
-7	4	6	fb20c12	fip1
+7	4	6	fb20c12	SPAC1F7.07c
 7	4	7	fb21c02	luc7
 7	4	8	fb21c04	SPAC3H1.05
 7	4	9	fb21c06	rpl1001
