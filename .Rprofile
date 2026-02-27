@@ -18,10 +18,11 @@
   
 setHook("rstudio.sessionInit", function(newSession) {
   if (newSession)
-    file.edit('CMMB 461 Assignment 1 - R Code F24.R')
+    file.edit('CMMB 461 Assignment 1 - R Code W26.R')
     setwd("/cloud/project/DataFiles")
     
 }, action = "append")
+
 
 
 
