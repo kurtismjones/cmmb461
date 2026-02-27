@@ -296,7 +296,7 @@ pdf(width=8.5, height = 11, file="FILE_NAME_HERE")        #Similar to when we us
                                                           #to be Heatmap2 followed by your name, then .pdf
 par(mfrow=c(2,1))                                      
 
-image(t(expression.data.filtered[2:5])[order(kc$cluster), order(kr$cluster)], yaxt = "n", main = "Clustered Data")
+image(t(expression.data.filtered[2:5])[order(kc$cluster), order(kr$cluster)], yaxt = "n", main = "Clustered Data",col = hcl.colors(12, "Heat", rev = TRUE))
 dev.off()
 
 
@@ -313,5 +313,6 @@ write.tree(as.phylo(hc),file='gene-expression-clustered_column_clusters.txt')
   UNIQID<-rownames(expression.data.filtered)                         
   expression.data.filtered<-cbind(UNIQID,expression.data.filtered)
 write.table(expression.data.filtered,file='gene-expression-clustered.txt',sep='\t',row.names=FALSE,quote=FALSE,col.names = TRUE)
+
 
 
