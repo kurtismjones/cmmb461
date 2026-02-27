@@ -169,7 +169,7 @@ normalized.array<-maNormMain(                              #The base marray norm
   
     plot(                                                  #To make a plot we will use the plot command,
          
-         raw.microarray[,1],                               #then specify what data we want to plot (in this case, the first microarray experiment 
+         prenorm.array[,1],                                #then specify what data we want to plot (in this case, the first microarray experiment 
                                                            #given by 'raw.microarray[,1]' representing the Gene A Deletion Experiment)
          
          xvar="maA", yvar="maM",zvar="maPrintTip",         #Next specify the each of the X,y and Z Variables/Labels. Note that each subsequent parameter                                            
@@ -313,4 +313,5 @@ write.tree(as.phylo(hc),file='gene-expression-clustered_column_clusters.txt')
   UNIQID<-rownames(expression.data.filtered)                         
   expression.data.filtered<-cbind(UNIQID,expression.data.filtered)
 write.table(expression.data.filtered,file='gene-expression-clustered.txt',sep='\t',row.names=FALSE,quote=FALSE,col.names = TRUE)
+
 
