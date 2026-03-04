@@ -98,7 +98,7 @@ prenorm.array<-read.Spot(targets = Targets)               #Now that we have info
                                                            #To read the raw microarray files, we use the read.Spot function 
 
                                                            #then using the information we just saved in the VARIABLE 'Targets' specify which 
-                                                           #files to read. We'll save the data read from the files as a new VARIABLE 'raw.microarray'. 
+                                                           #files to read. We'll save the data read from the files as a new VARIABLE 'prenorm.array'. 
                                                                                                                                   #***Hint HINT***
 
 microarray.info<-read.Galfile("pombe.gal")                 #When the raw data is read, there isn't any information on the layout of the
@@ -170,7 +170,7 @@ normalized.array<-maNormMain(                              #The base marray norm
     plot(                                                  #To make a plot we will use the plot command,
          
          prenorm.array[,1],                                #then specify what data we want to plot (in this case, the first microarray experiment 
-                                                           #given by 'raw.microarray[,1]' representing the Gene A Deletion Experiment)
+                                                           #given by 'prenorm.array[,1]' representing the Gene A Deletion Experiment)
          
          xvar="maA", yvar="maM",zvar="maPrintTip",         #Next specify the each of the X,y and Z Variables/Labels. Note that each subsequent parameter                                            
                                                            #is separated by a comma 
@@ -313,6 +313,7 @@ write.tree(as.phylo(hc),file='gene-expression-clustered_column_clusters.txt')
   UNIQID<-rownames(expression.data.filtered)                         
   expression.data.filtered<-cbind(UNIQID,expression.data.filtered)
 write.table(expression.data.filtered,file='gene-expression-clustered.txt',sep='\t',row.names=FALSE,quote=FALSE,col.names = TRUE)
+
 
 
 
